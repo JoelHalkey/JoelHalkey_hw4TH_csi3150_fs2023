@@ -1,3 +1,4 @@
+//Importing the car data from usedCars.js
 import  {usedCars}  from './usedCars.js';
 
 //Non-changing list of all the cars that are in the usedCars.js file
@@ -18,3 +19,19 @@ for (const carData of usedCars) {
 }
 
 console.log(carObjects);
+
+
+/*This function is called when the submit button for the 
+filter is pressed.*/
+function submit(){
+
+}
+
+
+function filter(){
+
+}
+
+function display(){
+
+} 
