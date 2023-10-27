@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: "Poppins", Courier, monospace;
+    margin: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.side-panel{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.year-filter-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.year-min-max-container, .car-price-min-max-container{
+    display: flex;
+}
