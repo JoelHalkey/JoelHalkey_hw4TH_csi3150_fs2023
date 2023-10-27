@@ -1,44 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-body{
+body {
     font-family: "Poppins", Courier, monospace;
     margin: 10px;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     font-size: x-large;
 }
 
-main{
+main {
     display: flex;
     justify-content: space-between;
 }
 
-input{
+input {
     border: solid 2px black;
     border-radius: 5px;
 }
 
-.side-panel{
+.side-panel {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
-.year-filter-container{
+.year-filter-container,
+.car-color-filter-container,
+.car-price-filter-container,
+.max-mileage-filter-container,
+.make-filter-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-} 
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 10px;
+}
 
-.year-min-max-container, .car-price-min-max-container{
+
+
+
+
+.year-min-max-container,
+.car-price-min-max-container {
     display: flex;
+}
+
+
+
+.car-year-label,
+.year-min-label,
+.year-max-label,
+.make-label,
+.max-mileage-label,
+.car-price-label,
+.car-price-min-label,
+.car-price-max-label,
+.car-color-label,
+.side-panel-title {
+    display: flex;
+    justify-content: center;
+}
+
+.side-panel-title {
+    font-size:x-large;
 }
