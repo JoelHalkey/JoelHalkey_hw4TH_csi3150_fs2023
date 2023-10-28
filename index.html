@@ -9,7 +9,12 @@
     <script type="module" src="js/usedCars.js"></script>
 </head>
 <body>
-    <header>Joel's Car Shop</header>
+
+    <header class="website-title">Joel's Car Shop</header>
+    <header class="search-bar-container">
+        <input type="text" name="" id="search-bar-input">
+        <div class="search-button">search</div>
+    </header>
     <main>
         <div class="side-panel">
             <div class="side-panel-title">Filter</div>
@@ -18,11 +23,11 @@
                 <p class="car-year-label">Year</p>
                 <div class="year-min-max-container">
                     <div class="year-min-container">
-                        <p class="year-min-label">Min.</p>
+                        <p class="year-min-label">min.</p>
                         <input type="text" name="" id="year-min-input">
                     </div>
                     <div class="year-max-container">
-                        <p class="year-max-label">Max.</p>
+                        <p class="year-max-label">max.</p>
                         <input type="text" name="" id="year-max-input">
                     </div>
                 </div>
@@ -46,11 +51,11 @@
                 <p class="car-price-label">Car Price</p>
                 <div class="car-price-min-max-container">
                     <div class="car-price-min-container">
-                        <p class="car-price-min-label">Min.</p>
+                        <p class="car-price-min-label">min.</p>
                         <input type="text" name="" id="car-price-min-input">
                     </div>
                     <div class="car-price-max-container">
-                        <p class="car-price-max-label">Max.</p>
+                        <p class="car-price-max-label">max.</p>
                         <input type="text" name="" id="car-price-max-input">
                     </div>
                 </div>
@@ -60,11 +65,17 @@
                 <p class="car-color-label">Car Color</p>
 
             </div>
-
+            <!-- SUBMIT BUTTON -->
+            <div class="submit-button" onclick="submit()" >search</div>
         </div>
         <div class="car-main-display-container">
             <div class="car-main-display-title">Models In Stock</div>
+            <div class="car-main-display">
+            
+
+            </div>
         </div>
     </main>
+   
 </body>
 </html>

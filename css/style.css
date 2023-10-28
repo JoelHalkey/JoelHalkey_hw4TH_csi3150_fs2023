@@ -11,7 +11,7 @@ body {
     margin: 10px;
 }
 
-header {
+.website-title {
     display: flex;
     justify-content: center;
     font-size: x-large;
@@ -19,18 +19,30 @@ header {
 
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
 }
 
 input {
     border: solid 2px black;
     border-radius: 5px;
+    padding: 5px;
+    font-size: large;
 }
 
-.side-panel {
+.search-bar-container{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.search-button{
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    max-width: fit-content;
+    padding: 5px;
+    background-color: #24a0ed;
 }
 
 .year-filter-container,
@@ -46,16 +58,21 @@ input {
     padding: 10px;
 }
 
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-
-
+.side-panel-title {
+    font-size: x-large;
+}
 
 .year-min-max-container,
 .car-price-min-max-container {
     display: flex;
+    gap: 5px;
 }
-
-
 
 .car-year-label,
 .year-min-label,
@@ -71,6 +88,38 @@ input {
     justify-content: center;
 }
 
-.side-panel-title {
-    font-size:x-large;
+.submit-button{
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    max-width: fit-content;
+    padding: 5px;
+    background-color: #24a0ed;
+}
+
+/* MAIN DISPLAY */
+.car-main-display-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.car-main-display-title {
+    font-size: x-large;
+}
+
+.car-main-display {
+    border: solid black 2px;
+    height: 100%;
+    width: 30em;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    column-gap: 5px;
+    row-gap: 5px;
+    /* text-align: center; */
+
 }
