@@ -125,7 +125,7 @@ const usedCars = [
     mileage: 18000,
     price: 55000,
     color: "Black",
-    gasMileage: "Electric (370 miles per charge)",
+    gasMileage: "Electric: 370 miles per charge",
   },
   {
     year: 2020,
@@ -154,6 +154,100 @@ const usedCars = [
     color: "Black",
     gasMileage: "23 mpg city, 34 mpg highway",
   },
+  //I added more entries just to populate the list
+  {
+    year: 2020,
+    make: "Hyundai",
+    model: "Elantra",
+    mileage: 22000,
+    price: 16000,
+    color: "Silver",
+    gasMileage: "30 mpg city, 41 mpg highway"
+  },
+  {
+    year: 2018,
+    make: "Kia",
+    model: "Sorento",
+    mileage: 26000,
+    price: 19000,
+    color: "White",
+    gasMileage: "22 mpg city, 30 mpg highway"
+  },
+  {
+    year: 2019,
+    make: "Nissan",
+    model: "Altima",
+    mileage: 29000,
+    price: 18000,
+    color: "Black",
+    gasMileage: "28 mpg city, 36 mpg highway"
+  },
+  {
+    year: 2016,
+    make: "Volkswagen",
+    model: "Passat",
+    mileage: 40000,
+    price: 15000,
+    color: "Gray",
+    gasMileage: "29 mpg city, 40 mpg highway"
+  },
+  {
+    year: 2017,
+    make: "Ford",
+    model: "Fusion",
+    mileage: 32000,
+    price: 17000,
+    color: "Blue",
+    gasMileage: "27 mpg city, 36 mpg highway"
+  },
+  {
+    year: 2017,
+    make: "Honda",
+    model: "Civic",
+    mileage: 42000,
+    price: 15000,
+    color: "Red",
+    gasMileage: "31 mpg city, 40 mpg highway"
+  },
+  {
+    year: 2016,
+    make: "Chevrolet",
+    model: "Malibu",
+    mileage: 36000,
+    price: 13000,
+    color: "Blue",
+    gasMileage: "27 mpg city, 38 mpg highway"
+  },
+  {
+    year: 2018,
+    make: "Subaru",
+    model: "Outback",
+    mileage: 31000,
+    price: 19000,
+    color: "Gray",
+    gasMileage: "25 mpg city, 32 mpg highway"
+  },
+  {
+    year: 2015,
+    make: "Mazda",
+    model: "CX-5",
+    mileage: 38000,
+    price: 17000,
+    color: "Silver",
+    gasMileage: "26 mpg city, 34 mpg highway"
+  },
+  {
+    year: 2019,
+    make: "Dodge",
+    model: "Challenger",
+    mileage: 25000,
+    price: 24000,
+    color: "Black",
+    gasMileage: "19 mpg city, 30 mpg highway"
+  },
+
+
+
 ];
 
 

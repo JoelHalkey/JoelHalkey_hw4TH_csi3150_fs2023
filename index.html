@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Website</title>
+    <title>Joel's Car Shop</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/index.js" defer></script>
     <script type="module" src="js/usedCars.js"></script>
@@ -12,23 +12,25 @@
 
     <header class="website-title">Joel's Car Shop</header>
     <header class="search-bar-container">
-        <input type="text" name="" id="search-bar-input">
+        <input type="text" name="" id="search-bar-input" value="" placeholder="Car name">
         <div class="search-button">search</div>
     </header>
     <main>
         <div class="side-panel">
             <div class="side-panel-title">Filter</div>
+            <!-- SUBMIT BUTTON -->
+            <div class="submit-button">search</div>
             <!-- YEAR SECTION -->
             <div class="year-filter-container">
                 <p class="car-year-label">Year</p>
                 <div class="year-min-max-container">
                     <div class="year-min-container">
                         <p class="year-min-label">min.</p>
-                        <input type="text" name="" id="year-min-input">
+                        <input type="text" name="" id="year-min-input" value="">
                     </div>
                     <div class="year-max-container">
                         <p class="year-max-label">max.</p>
-                        <input type="text" name="" id="year-max-input">
+                        <input type="text" name="" id="year-max-input" value="">
                     </div>
                 </div>
             </div>
@@ -38,7 +40,7 @@
                     Make
                 </p>
                 <div class="make-checkbox-container">
-                    TEMP CHECK BOX TEXT
+                    
                 </div>
             </div>
             <!-- MAX MILEAGE SECTION -->
@@ -52,26 +54,26 @@
                 <div class="car-price-min-max-container">
                     <div class="car-price-min-container">
                         <p class="car-price-min-label">min.</p>
-                        <input type="text" name="" id="car-price-min-input">
+                        <input type="text" name="" id="car-price-min-input" value="">
                     </div>
                     <div class="car-price-max-container">
                         <p class="car-price-max-label">max.</p>
-                        <input type="text" name="" id="car-price-max-input">
+                        <input type="text" name="" id="car-price-max-input" value="">
                     </div>
                 </div>
             </div>
             <!-- CAR COLOR SECTION -->
             <div class="car-color-filter-container">
                 <p class="car-color-label">Car Color</p>
+                <div class="colors-checkbox-container">
 
+                </div>
             </div>
-            <!-- SUBMIT BUTTON -->
-            <div class="submit-button" onclick="submit()" >search</div>
         </div>
         <div class="car-main-display-container">
             <div class="car-main-display-title">Models In Stock</div>
             <div class="car-main-display">
-            
+                
 
             </div>
         </div>

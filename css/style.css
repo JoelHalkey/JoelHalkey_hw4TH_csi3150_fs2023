@@ -9,37 +9,47 @@
 body {
     font-family: "Poppins", Courier, monospace;
     margin: 10px;
+    min-width: 565px;
+    background: linear-gradient(
+    to bottom, rgba(240,240,240,1));
+    
 }
 
 .website-title {
     display: flex;
     justify-content: center;
-    font-size: x-large;
+    font-size: xxx-large;
 }
 
 main {
     display: flex;
     justify-content: center;
+    min-width:fit-content;
     gap: 10px;
 }
 
 input {
     border: solid 2px black;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
     font-size: large;
+    width: 75px;
 }
 
-.search-bar-container{
+.search-bar-container {
     display: flex;
     justify-content: center;
     gap: 5px;
 }
 
-.search-button{
+#search-bar-input {
+    width: 200px;
+}
+
+.search-button {
     cursor: pointer;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     max-width: fit-content;
     padding: 5px;
     background-color: #24a0ed;
@@ -54,7 +64,7 @@ input {
     flex-direction: column;
     justify-content: center;
     border: solid black 2px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -62,10 +72,12 @@ input {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-weight: bold;
 }
 
 .side-panel-title {
-    font-size: x-large;
+    align-self: flex-start;
+    font-size: xx-large;
 }
 
 .year-min-max-container,
@@ -73,6 +85,20 @@ input {
     display: flex;
     gap: 5px;
 }
+
+.make-checkbox-container,
+.make-checkbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.make-checkbox,
+.color-checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 .car-year-label,
 .year-min-label,
@@ -88,13 +114,14 @@ input {
     justify-content: center;
 }
 
-.submit-button{
+.submit-button {
     cursor: pointer;
     color: white;
-    border-radius: 5px;
-    max-width: fit-content;
+    border-radius: 10px;
+    text-align: center;
     padding: 5px;
     background-color: #24a0ed;
+    font-weight: lighter;
 }
 
 /* MAIN DISPLAY */
@@ -106,20 +133,67 @@ input {
 }
 
 .car-main-display-title {
-    font-size: x-large;
+    align-self: flex-end;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 .car-main-display {
     border: solid black 2px;
-    height: 100%;
-    width: 30em;
-    border-radius: 5px;
-
+    border-radius: 10px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-rows: min-content;
+    grid-template-columns: auto auto auto auto;
     padding: 10px;
-    column-gap: 5px;
-    row-gap: 5px;
-    /* text-align: center; */
+    column-gap: 10px;
+    row-gap: 10px;
+}
 
+
+/* CAR PANEL SECTION */
+.car-panel {
+    border: solid black 2px;
+    border-radius: 10px;
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-name {
+    display: flex;
+    justify-content: center;
+    background-color: #24a0ed;
+    color: white;
+    border-radius: 8px;
+}
+
+.car-price,
+.car-color,
+.car-mileage,
+.car-gas-mileage,
+.car-year {
+    padding: 0px 5px;
+}
+
+@media (max-width: 1035px){
+    .car-main-display{
+        grid-template-columns: auto auto auto;
+    }
+    .car-main-display-title{
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 920px){
+    .car-main-display{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 860px){
+    .car-main-display{
+        grid-template-columns: auto;
+    }
 }
